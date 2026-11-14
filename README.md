@@ -1,5 +1,5 @@
 # my-keyboard
-愛用のキーボードをブラウザ上でリアルに3D描画するアプリです。モデルの回転・ズームや、キーのクリックに応じた押下アニメーションを備える予定です。
+愛用のキーボードをブラウザ上で3D表示するアプリです。ドラッグによる回転、ズーム、51個のキーの押下アニメーションを備えています。
 
 要件・技術設計: [Issue #5](https://github.com/Hol1kgmg/my-keyboard/issues/5)
 
@@ -31,10 +31,47 @@ source ~/.zshrc
 
 ```bash
 direnv allow
+just setup
+just dev
 ```
 
 ツールのインストールと Git フックの設定が一括で行われます。
 以降はリポジトリのディレクトリに入るだけで自動的に環境が有効になります。
+
+`just setup` は `npm ci` と配信用モデルの生成を行います。`just dev` のURLは http://my-keyboard.localhost:1355 です。worktreeではブランチ名が前置されます。プロキシを使わずに起動する場合は `npm run dev` を実行し、表示されたURLを開いてください。
+
+## アプリの操作
+
+- モデルをドラッグして回転、ホイールやトラックパッドでズームします。
+- キーを短くクリックすると押下し、長押しすると離すまで沈みます。6pxを超える移動はカメラ操作として扱います。
+- 「斜め」「真上」「低い位置」で視点を切り替え、リセットボタンで初期視点に戻せます。
+- 「キーボード入力」を有効にすると、実際のキーボードからも対応するキーを押せます。最下段のBackspaceは「⌫」、Enterは「↩︎」で表示します。Tabはモデルを押しながら通常のフォーカス移動も行います。OS・ブラウザのショートカットやFnキーは再現対象外です。
+- 「キー一覧から操作する」を開くと、矢印キーで移動し、EnterまたはSpaceで個別キーを押せます。
+
+動きを減らすOS設定では、押下と視点切替を即時に反映します。モデル・照明の読み込み失敗やWebGLの中断時は、再読み込みの案内を表示します。
+
+配列は `scripts/keyboard-layout.mjs` で定義し、3D上の刻印・キー一覧・入力対応で共有します。空欄は無刻印・未割当のキーとして残しています。最下段のBackspace・Shift・Space・Enterは1.25uです。
+
+## アプリの構成と検証
+
+React / TypeScript / Three.js / React Three Fiber / Dreiで実装しています。開発・ビルド・静的検査・ユニットテストにはプロジェクト内の **Vite+ 1.6.0** を使います。Node.js 24は `flake.nix` のdevShellで管理し、Vite+によるランタイムのインストールやグローバル設定の変更は行いません。npmの依存関係は `package-lock.json` で固定します。
+
+Vite+の[ローカルCLI](https://viteplus.dev/guide/)・[統合チェック](https://viteplus.dev/guide/check)・[テスト](https://viteplus.dev/guide/test)の公式仕様を確認しています。Viteのnpmエイリアスには同じリリースの `@voidzero-dev/vite-plus-core` を使い、npmのoverrideでReactプラグインの依存解決も統一します。
+
+```bash
+just check      # Vite+によるFormat / Lint / 型検査
+just test       # モデルの契約とドラッグ判定
+just build      # 配信用モデルを生成し、dist/にビルド
+just preview    # ビルド済みアプリを確認
+npm exec -- playwright install chromium
+just test-e2e   # 3D操作・エラー・レスポンシブ表示のブラウザテスト
+```
+
+手元のChromeを使う場合は `PLAYWRIGHT_CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" just test-e2e` を実行できます。対応版のChromiumを使う通常の実行を推奨します。`PLAYWRIGHT_SOFTWARE_GL=1` でソフトウェア描画を指定できます。CI設定でも同じ検査とビルド、Chromiumでのブラウザテストを行います。Safari・Firefox・実際のタッチ端末での確認は別途必要です。
+
+静的配信するディレクトリは `dist/` です。サブパスに配信する場合は `npm run build -- --base=/my-keyboard/` を実行してください。モデル・照明のURLもbaseに追従します。
+
+アセットの構造・再生成手順・出典は [docs/assets.md](docs/assets.md)、性能測定は [docs/viewer-validation.md](docs/viewer-validation.md) を参照してください。
 
 ## 開発環境
 
@@ -42,6 +79,7 @@ direnv allow
 
 | ツール | 用途 |
 |---|---|
+| Node.js 24 / npm | アプリの依存管理、プロジェクト内のVite+の実行 |
 | just | タスクランナー（[justfile](justfile)） |
 | gitleaks / lefthook | pre-commit でステージ済みの差分をシークレット走査し、平文の `.env*` のコミットを止める（[lefthook.yaml](lefthook.yaml)） |
 | dotenvx | `.env*` を暗号化してコミットし、`dotenvx run -- <cmd>` で復号して渡す |
@@ -87,6 +125,11 @@ CI などでは `.env.keys` の代わりに `DOTENV_PRIVATE_KEY`（`.env.dev` �
 
 ```bash
 just          # 利用可能なタスク一覧
+just setup    # npm依存のインストールとモデル変換
+just dev      # 3Dビューアを起動
+just check    # アプリの静的検査
+just test     # ユニットテスト
+just build    # 配信用ビルド
 just docs     # Markdown を http://docs.<リポジトリ名>.localhost:1355 で閲覧する
 ```
 

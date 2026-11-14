@@ -2,6 +2,35 @@
 list:
     @just --list
 
+# Install application dependencies and prepare the supplied model
+setup:
+    npm ci
+    npm run assets
+
+# Run the application through portless
+dev *ARGS:
+    portless run --name {{file_name(parent_directory(`git rev-parse --path-format=absolute --git-common-dir`))}} sh -c 'npm run dev -- --port "${PORT:-5173}" "$@"' _ {{ARGS}}
+
+# Build the application for static hosting
+build:
+    npm run build
+
+# Check formatting, lint, and TypeScript types with Vite+
+check:
+    npm run check
+
+# Run model-contract and interaction tests
+test:
+    npm test
+
+# Run browser interaction tests
+test-e2e:
+    npm run test:e2e
+
+# Preview the production build
+preview:
+    npm run preview
+
 # Install skills into .claude/skills
 skills:
     nix run .#skills-install-local

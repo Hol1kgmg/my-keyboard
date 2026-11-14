@@ -8,3 +8,11 @@
 
 .DS_Store
 *.log
+
+node_modules/
+dist/
+.vite/
+.vite-plus/
+test-results/
+playwright-report/
+atlas_debug.png

@@ -1,0 +1,25 @@
+name: application
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  application:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - uses: DeterminateSystems/nix-installer-action@786fff0690178f1234e4e1fe9b536e94f5433196 # v20
+      - run: nix develop --command just setup
+      - run: nix develop --command just check
+      - run: nix develop --command just test
+      - run: nix develop --command just build
+      - run: nix develop --command npm exec -- playwright install --with-deps chromium
+      - run: nix develop --command just test-e2e

@@ -126,6 +126,7 @@
         devShells.default = pkgs.mkShell {
           inputsFrom = [ self.devShells.${system}.template ];
           packages = [
+            pkgs.nodejs_24
           ];
         };
       });

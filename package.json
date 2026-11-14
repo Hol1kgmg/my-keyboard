@@ -1,0 +1,41 @@
+{
+  "name": "my-keyboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vp dev --host 127.0.0.1",
+    "build": "npm run assets && vp build",
+    "preview": "vp preview --host 127.0.0.1",
+    "check": "vp check",
+    "fmt": "vp fmt",
+    "test": "vp test",
+    "test:e2e": "playwright test",
+    "assets": "node scripts/prepare-keyboard.mjs"
+  },
+  "dependencies": {
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.185.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "typescript": "^6.0.0",
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.6.0",
+    "vite-plus": "1.6.0"
+  },
+  "overrides": {
+    "vite": "$vite"
+  },
+  "engines": {
+    "node": "^24.11.0"
+  },
+  "packageManager": "npm@11.19.0"
+}

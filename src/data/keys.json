@@ -1,0 +1,847 @@
+[
+  {
+    "id": "Key_Q",
+    "label": "Q",
+    "legend": "Q",
+    "row": 0,
+    "centerU": 0.5,
+    "widthU": 1,
+    "centerMm": [
+      -114.30000000000001,
+      28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyQ"
+    ]
+  },
+  {
+    "id": "Key_W",
+    "label": "W",
+    "legend": "W",
+    "row": 0,
+    "centerU": 1.5,
+    "widthU": 1,
+    "centerMm": [
+      -95.25,
+      28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyW"
+    ]
+  },
+  {
+    "id": "Key_E",
+    "label": "E",
+    "legend": "E",
+    "row": 0,
+    "centerU": 2.5,
+    "widthU": 1,
+    "centerMm": [
+      -76.2,
+      28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyE"
+    ]
+  },
+  {
+    "id": "Key_R",
+    "label": "R",
+    "legend": "R",
+    "row": 0,
+    "centerU": 3.5,
+    "widthU": 1,
+    "centerMm": [
+      -57.150000000000006,
+      28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyR"
+    ]
+  },
+  {
+    "id": "Key_T",
+    "label": "T",
+    "legend": "T",
+    "row": 0,
+    "centerU": 4.5,
+    "widthU": 1,
+    "centerMm": [
+      -38.1,
+      28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyT"
+    ]
+  },
+  {
+    "id": "Key_Blank_R1C6",
+    "label": "無刻印 1",
+    "legend": "",
+    "row": 0,
+    "centerU": 5.5,
+    "widthU": 1,
+    "centerMm": [
+      -19.05,
+      28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": []
+  },
+  {
+    "id": "Key_Blank_R1C7",
+    "label": "無刻印 2",
+    "legend": "",
+    "row": 0,
+    "centerU": 6.5,
+    "widthU": 1,
+    "centerMm": [
+      0,
+      28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": []
+  },
+  {
+    "id": "Key_Blank_R1C8",
+    "label": "無刻印 3",
+    "legend": "",
+    "row": 0,
+    "centerU": 7.5,
+    "widthU": 1,
+    "centerMm": [
+      19.05,
+      28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": []
+  },
+  {
+    "id": "Key_Y",
+    "label": "Y",
+    "legend": "Y",
+    "row": 0,
+    "centerU": 8.5,
+    "widthU": 1,
+    "centerMm": [
+      38.1,
+      28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyY"
+    ]
+  },
+  {
+    "id": "Key_U",
+    "label": "U",
+    "legend": "U",
+    "row": 0,
+    "centerU": 9.5,
+    "widthU": 1,
+    "centerMm": [
+      57.150000000000006,
+      28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyU"
+    ]
+  },
+  {
+    "id": "Key_I",
+    "label": "I",
+    "legend": "I",
+    "row": 0,
+    "centerU": 10.5,
+    "widthU": 1,
+    "centerMm": [
+      76.2,
+      28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyI"
+    ]
+  },
+  {
+    "id": "Key_O",
+    "label": "O",
+    "legend": "O",
+    "row": 0,
+    "centerU": 11.5,
+    "widthU": 1,
+    "centerMm": [
+      95.25,
+      28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyO"
+    ]
+  },
+  {
+    "id": "Key_P",
+    "label": "P",
+    "legend": "P",
+    "row": 0,
+    "centerU": 12.5,
+    "widthU": 1,
+    "centerMm": [
+      114.30000000000001,
+      28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyP"
+    ]
+  },
+  {
+    "id": "Key_A",
+    "label": "A",
+    "legend": "A",
+    "row": 1,
+    "centerU": 0.5,
+    "widthU": 1,
+    "centerMm": [
+      -114.30000000000001,
+      9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyA"
+    ]
+  },
+  {
+    "id": "Key_S",
+    "label": "S",
+    "legend": "S",
+    "row": 1,
+    "centerU": 1.5,
+    "widthU": 1,
+    "centerMm": [
+      -95.25,
+      9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyS"
+    ]
+  },
+  {
+    "id": "Key_D",
+    "label": "D",
+    "legend": "D",
+    "row": 1,
+    "centerU": 2.5,
+    "widthU": 1,
+    "centerMm": [
+      -76.2,
+      9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyD"
+    ]
+  },
+  {
+    "id": "Key_F",
+    "label": "F",
+    "legend": "F",
+    "row": 1,
+    "centerU": 3.5,
+    "widthU": 1,
+    "centerMm": [
+      -57.150000000000006,
+      9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyF"
+    ]
+  },
+  {
+    "id": "Key_G",
+    "label": "G",
+    "legend": "G",
+    "row": 1,
+    "centerU": 4.5,
+    "widthU": 1,
+    "centerMm": [
+      -38.1,
+      9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyG"
+    ]
+  },
+  {
+    "id": "Key_Tab",
+    "label": "Tab",
+    "legend": "tab",
+    "row": 1,
+    "centerU": 5.5,
+    "widthU": 1,
+    "centerMm": [
+      -19.05,
+      9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "Tab"
+    ]
+  },
+  {
+    "id": "Key_Blank_R2C7",
+    "label": "無刻印 4",
+    "legend": "",
+    "row": 1,
+    "centerU": 6.5,
+    "widthU": 1,
+    "centerMm": [
+      0,
+      9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": []
+  },
+  {
+    "id": "Key_Escape",
+    "label": "Esc",
+    "legend": "esc",
+    "row": 1,
+    "centerU": 7.5,
+    "widthU": 1,
+    "centerMm": [
+      19.05,
+      9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "Escape"
+    ]
+  },
+  {
+    "id": "Key_H",
+    "label": "H",
+    "legend": "H",
+    "row": 1,
+    "centerU": 8.5,
+    "widthU": 1,
+    "centerMm": [
+      38.1,
+      9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyH"
+    ]
+  },
+  {
+    "id": "Key_J",
+    "label": "J",
+    "legend": "J",
+    "row": 1,
+    "centerU": 9.5,
+    "widthU": 1,
+    "centerMm": [
+      57.150000000000006,
+      9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyJ"
+    ]
+  },
+  {
+    "id": "Key_K",
+    "label": "K",
+    "legend": "K",
+    "row": 1,
+    "centerU": 10.5,
+    "widthU": 1,
+    "centerMm": [
+      76.2,
+      9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyK"
+    ]
+  },
+  {
+    "id": "Key_L",
+    "label": "L",
+    "legend": "L",
+    "row": 1,
+    "centerU": 11.5,
+    "widthU": 1,
+    "centerMm": [
+      95.25,
+      9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyL"
+    ]
+  },
+  {
+    "id": "Key_Semicolon",
+    "label": ";",
+    "legend": ";",
+    "row": 1,
+    "centerU": 12.5,
+    "widthU": 1,
+    "centerMm": [
+      114.30000000000001,
+      9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "Semicolon"
+    ]
+  },
+  {
+    "id": "Key_Z",
+    "label": "Z",
+    "legend": "Z",
+    "row": 2,
+    "centerU": 0.5,
+    "widthU": 1,
+    "centerMm": [
+      -114.30000000000001,
+      -9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyZ"
+    ]
+  },
+  {
+    "id": "Key_X",
+    "label": "X",
+    "legend": "X",
+    "row": 2,
+    "centerU": 1.5,
+    "widthU": 1,
+    "centerMm": [
+      -95.25,
+      -9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyX"
+    ]
+  },
+  {
+    "id": "Key_C",
+    "label": "C",
+    "legend": "C",
+    "row": 2,
+    "centerU": 2.5,
+    "widthU": 1,
+    "centerMm": [
+      -76.2,
+      -9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyC"
+    ]
+  },
+  {
+    "id": "Key_V",
+    "label": "V",
+    "legend": "V",
+    "row": 2,
+    "centerU": 3.5,
+    "widthU": 1,
+    "centerMm": [
+      -57.150000000000006,
+      -9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyV"
+    ]
+  },
+  {
+    "id": "Key_B",
+    "label": "B",
+    "legend": "B",
+    "row": 2,
+    "centerU": 4.5,
+    "widthU": 1,
+    "centerMm": [
+      -38.1,
+      -9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyB"
+    ]
+  },
+  {
+    "id": "Key_Blank_R3C6",
+    "label": "無刻印 5",
+    "legend": "",
+    "row": 2,
+    "centerU": 5.5,
+    "widthU": 1,
+    "centerMm": [
+      -19.05,
+      -9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": []
+  },
+  {
+    "id": "Key_Blank_R3C7",
+    "label": "無刻印 6",
+    "legend": "",
+    "row": 2,
+    "centerU": 6.5,
+    "widthU": 1,
+    "centerMm": [
+      0,
+      -9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": []
+  },
+  {
+    "id": "Key_Minus",
+    "label": "-",
+    "legend": "-",
+    "row": 2,
+    "centerU": 7.5,
+    "widthU": 1,
+    "centerMm": [
+      19.05,
+      -9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "Minus"
+    ]
+  },
+  {
+    "id": "Key_N",
+    "label": "N",
+    "legend": "N",
+    "row": 2,
+    "centerU": 8.5,
+    "widthU": 1,
+    "centerMm": [
+      38.1,
+      -9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyN"
+    ]
+  },
+  {
+    "id": "Key_M",
+    "label": "M",
+    "legend": "M",
+    "row": 2,
+    "centerU": 9.5,
+    "widthU": 1,
+    "centerMm": [
+      57.150000000000006,
+      -9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "KeyM"
+    ]
+  },
+  {
+    "id": "Key_Comma",
+    "label": ",",
+    "legend": ",",
+    "row": 2,
+    "centerU": 10.5,
+    "widthU": 1,
+    "centerMm": [
+      76.2,
+      -9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "Comma"
+    ]
+  },
+  {
+    "id": "Key_Period",
+    "label": ".",
+    "legend": ".",
+    "row": 2,
+    "centerU": 11.5,
+    "widthU": 1,
+    "centerMm": [
+      95.25,
+      -9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "Period"
+    ]
+  },
+  {
+    "id": "Key_Slash",
+    "label": "/",
+    "legend": "/",
+    "row": 2,
+    "centerU": 12.5,
+    "widthU": 1,
+    "centerMm": [
+      114.30000000000001,
+      -9.525
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "Slash"
+    ]
+  },
+  {
+    "id": "Key_Blank_R4C1",
+    "label": "無刻印 7",
+    "legend": "",
+    "row": 3,
+    "centerU": 0.5,
+    "widthU": 1,
+    "centerMm": [
+      -114.30000000000001,
+      -28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": []
+  },
+  {
+    "id": "Key_Blank_R4C2",
+    "label": "無刻印 8",
+    "legend": "",
+    "row": 3,
+    "centerU": 1.5,
+    "widthU": 1,
+    "centerMm": [
+      -95.25,
+      -28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": []
+  },
+  {
+    "id": "Key_Blank_R4C3",
+    "label": "無刻印 9",
+    "legend": "",
+    "row": 3,
+    "centerU": 2.5,
+    "widthU": 1,
+    "centerMm": [
+      -76.2,
+      -28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": []
+  },
+  {
+    "id": "Key_Eisu",
+    "label": "英数",
+    "legend": "英数",
+    "row": 3,
+    "centerU": 3.5,
+    "widthU": 1,
+    "centerMm": [
+      -57.150000000000006,
+      -28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "Lang2"
+    ]
+  },
+  {
+    "id": "Key_Backspace",
+    "label": "Backspace",
+    "legend": "⌫",
+    "row": 3,
+    "centerU": 4.625,
+    "widthU": 1.25,
+    "centerMm": [
+      -35.71875,
+      -28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "Backspace"
+    ]
+  },
+  {
+    "id": "Key_Shift",
+    "label": "Shift",
+    "legend": "shift",
+    "row": 3,
+    "centerU": 5.875,
+    "widthU": 1.25,
+    "centerMm": [
+      -11.90625,
+      -28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "ShiftLeft",
+      "ShiftRight"
+    ]
+  },
+  {
+    "id": "Key_Space",
+    "label": "Space",
+    "legend": "space",
+    "row": 3,
+    "centerU": 7.125,
+    "widthU": 1.25,
+    "centerMm": [
+      11.90625,
+      -28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "Space"
+    ]
+  },
+  {
+    "id": "Key_Enter",
+    "label": "Enter",
+    "legend": "↩︎",
+    "row": 3,
+    "centerU": 8.375,
+    "widthU": 1.25,
+    "centerMm": [
+      35.71875,
+      -28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "Enter",
+      "NumpadEnter"
+    ]
+  },
+  {
+    "id": "Key_Hiragana",
+    "label": "ひら",
+    "legend": "ひら",
+    "row": 3,
+    "centerU": 9.5,
+    "widthU": 1,
+    "centerMm": [
+      57.150000000000006,
+      -28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": [
+      "Lang1"
+    ]
+  },
+  {
+    "id": "Key_Blank_R4C10",
+    "label": "無刻印 10",
+    "legend": "",
+    "row": 3,
+    "centerU": 10.5,
+    "widthU": 1,
+    "centerMm": [
+      76.2,
+      -28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": []
+  },
+  {
+    "id": "Key_Blank_R4C11",
+    "label": "無刻印 11",
+    "legend": "",
+    "row": 3,
+    "centerU": 11.5,
+    "widthU": 1,
+    "centerMm": [
+      95.25,
+      -28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": []
+  },
+  {
+    "id": "Key_Blank_R4C12",
+    "label": "無刻印 12",
+    "legend": "",
+    "row": 3,
+    "centerU": 12.5,
+    "widthU": 1,
+    "centerMm": [
+      114.30000000000001,
+      -28.575000000000003
+    ],
+    "pressDistance": 0.0012,
+    "dark": false,
+    "codes": []
+  }
+]
