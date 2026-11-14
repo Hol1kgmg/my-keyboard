@@ -1,5 +1,7 @@
-# {app name}
-{アプリの概要}
+# my-keyboard
+愛用のキーボードをブラウザ上でリアルに3D描画するアプリです。モデルの回転・ズームや、キーのクリックに応じた押下アニメーションを備える予定です。
+
+要件・技術設計: [Issue #5](https://github.com/Hol1kgmg/my-keyboard/issues/5)
 
 ## 前提条件
 

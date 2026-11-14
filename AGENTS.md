@@ -1,20 +1,10 @@
-# First Run
-If README.md still contains `{app name}`, this repository was just generated from the template.
-Run the `init-from-template` skill before any other work.
-
 # Project Overview
-{Describe the project (e.g. Dotfiles management project for macOS using Nix and Home-Manager)}
+愛用のキーボードをブラウザ上でリアルに3D描画するアプリです。モデルの回転・ズームや、キーのクリックに応じた押下アニメーションを備える予定です。
+
+要件・技術設計: [Issue #5](https://github.com/Hol1kgmg/my-keyboard/issues/5)
 
 # Setup and Basic Usage
 Setup instructions and basic usage are documented in [README.md](./README.md).
-
-# Directory Structure
-{Remove this whole section if a directory structure document is not needed}
-See [{DIRECTORY_STRUCTURE_FILE}.md](./{DIRECTORY_STRUCTURE_FILE}.md) for details.
-
-# Troubleshooting
-{Remove this whole section if a troubleshooting document is not needed}
-- Setup and daily usage issues: See [{TROUBLESHOOTING_FILE}.md](./{TROUBLESHOOTING_FILE}.md)
 
 # Work Rules
 1. Propose implementation plan
