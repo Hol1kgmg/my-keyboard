@@ -1,6 +1,26 @@
 import { KeyboardViewer } from "./components/KeyboardViewer";
 import { useKeyInteraction } from "./hooks/useKeyInteraction";
 
+const PARTS = [
+  { role: "キット", name: "GOFORTY V2", url: "https://keeb-on.com/products/goforty-v2" },
+  {
+    role: "キーキャップ",
+    name: "THT 98key White",
+    url: "https://shop.talpkeyboard.com/products/tht-98key-white",
+  },
+  {
+    role: "スイッチ",
+    name: "Kailh Glacial Silver Switch",
+    url: "https://shop.yushakobo.jp/products/10670",
+    note: "バネを45gに入れ替え",
+  },
+  {
+    role: "ワッシャー",
+    name: "Rushbox Washer",
+    url: "https://shop.moimate.com/products/rushbox-washer",
+  },
+];
+
 export function App() {
   const interaction = useKeyInteraction();
   return (
@@ -65,6 +85,22 @@ export function App() {
                 270.25<span>mm</span>
               </dd>
             </div>
+          </dl>
+        </section>
+        <section className="parts" aria-labelledby="parts-heading">
+          <h2 id="parts-heading">構成パーツ</h2>
+          <dl>
+            {PARTS.map((part) => (
+              <div key={part.role}>
+                <dt>{part.role}</dt>
+                <dd>
+                  <a href={part.url} target="_blank" rel="noreferrer">
+                    {part.name}
+                  </a>
+                  {part.note && <span>{part.note}</span>}
+                </dd>
+              </div>
+            ))}
           </dl>
         </section>
       </main>

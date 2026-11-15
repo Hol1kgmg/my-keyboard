@@ -275,6 +275,40 @@ h1 {
   margin-left: 6px;
   color: var(--muted);
 }
+.parts {
+  border-top: 1px solid var(--line);
+  padding: 29px 0;
+}
+.parts h2 {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  margin: 0 0 18px;
+}
+.parts dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px 40px;
+  margin: 0;
+}
+.parts dt {
+  font-size: 10px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.parts dd {
+  margin: 0;
+  font-size: 14px;
+}
+.parts a {
+  text-underline-offset: 3px;
+}
+.parts dd span {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--brass);
+}
 footer {
   border-top: 1px solid var(--line);
   padding: 23px 0 29px;
