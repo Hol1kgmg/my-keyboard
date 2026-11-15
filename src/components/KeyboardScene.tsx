@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import { assetUrl } from "../data/keyboard";
 import type { KeyInteraction } from "../hooks/useKeyInteraction";
 import { CameraController } from "./CameraController";
-import type { ViewRequest } from "./CameraController";
 import { KeyboardModel } from "./KeyboardModel";
 
 function SceneReady({ onReady }: { onReady: () => void }) {
@@ -53,19 +52,17 @@ function FrameMetrics() {
 
 export function KeyboardScene({
   interaction,
-  view,
   reducedMotion,
   onReady,
 }: {
   interaction: KeyInteraction;
-  view: ViewRequest;
   reducedMotion: boolean;
   onReady: () => void;
 }) {
   return (
     <>
       <SceneReady onReady={onReady} />
-      <CameraController view={view} reducedMotion={reducedMotion} />
+      <CameraController />
       <Environment
         files={assetUrl("environment/studio_small_03_1k.hdr")}
         environmentIntensity={0.25}

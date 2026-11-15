@@ -11,10 +11,7 @@
       28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyQ"
-    ]
+    "dark": false
   },
   {
     "id": "Key_W",
@@ -28,10 +25,7 @@
       28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyW"
-    ]
+    "dark": false
   },
   {
     "id": "Key_E",
@@ -45,10 +39,7 @@
       28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyE"
-    ]
+    "dark": false
   },
   {
     "id": "Key_R",
@@ -62,10 +53,7 @@
       28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyR"
-    ]
+    "dark": false
   },
   {
     "id": "Key_T",
@@ -79,10 +67,7 @@
       28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyT"
-    ]
+    "dark": false
   },
   {
     "id": "Key_Blank_R1C6",
@@ -96,8 +81,7 @@
       28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": []
+    "dark": false
   },
   {
     "id": "Key_Blank_R1C7",
@@ -111,8 +95,7 @@
       28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": []
+    "dark": false
   },
   {
     "id": "Key_Blank_R1C8",
@@ -126,8 +109,7 @@
       28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": []
+    "dark": false
   },
   {
     "id": "Key_Y",
@@ -141,10 +123,7 @@
       28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyY"
-    ]
+    "dark": false
   },
   {
     "id": "Key_U",
@@ -158,10 +137,7 @@
       28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyU"
-    ]
+    "dark": false
   },
   {
     "id": "Key_I",
@@ -175,10 +151,7 @@
       28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyI"
-    ]
+    "dark": false
   },
   {
     "id": "Key_O",
@@ -192,10 +165,7 @@
       28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyO"
-    ]
+    "dark": false
   },
   {
     "id": "Key_P",
@@ -209,10 +179,7 @@
       28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyP"
-    ]
+    "dark": false
   },
   {
     "id": "Key_A",
@@ -226,10 +193,7 @@
       9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyA"
-    ]
+    "dark": false
   },
   {
     "id": "Key_S",
@@ -243,10 +207,7 @@
       9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyS"
-    ]
+    "dark": false
   },
   {
     "id": "Key_D",
@@ -260,10 +221,7 @@
       9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyD"
-    ]
+    "dark": false
   },
   {
     "id": "Key_F",
@@ -277,10 +235,7 @@
       9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyF"
-    ]
+    "dark": false
   },
   {
     "id": "Key_G",
@@ -294,10 +249,7 @@
       9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyG"
-    ]
+    "dark": false
   },
   {
     "id": "Key_Tab",
@@ -311,10 +263,7 @@
       9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "Tab"
-    ]
+    "dark": false
   },
   {
     "id": "Key_Blank_R2C7",
@@ -328,8 +277,7 @@
       9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": []
+    "dark": false
   },
   {
     "id": "Key_Escape",
@@ -343,10 +291,7 @@
       9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "Escape"
-    ]
+    "dark": false
   },
   {
     "id": "Key_H",
@@ -360,10 +305,7 @@
       9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyH"
-    ]
+    "dark": false
   },
   {
     "id": "Key_J",
@@ -377,10 +319,7 @@
       9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyJ"
-    ]
+    "dark": false
   },
   {
     "id": "Key_K",
@@ -394,10 +333,7 @@
       9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyK"
-    ]
+    "dark": false
   },
   {
     "id": "Key_L",
@@ -411,10 +347,7 @@
       9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyL"
-    ]
+    "dark": false
   },
   {
     "id": "Key_Semicolon",
@@ -428,10 +361,7 @@
       9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "Semicolon"
-    ]
+    "dark": false
   },
   {
     "id": "Key_Z",
@@ -445,10 +375,7 @@
       -9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyZ"
-    ]
+    "dark": false
   },
   {
     "id": "Key_X",
@@ -462,10 +389,7 @@
       -9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyX"
-    ]
+    "dark": false
   },
   {
     "id": "Key_C",
@@ -479,10 +403,7 @@
       -9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyC"
-    ]
+    "dark": false
   },
   {
     "id": "Key_V",
@@ -496,10 +417,7 @@
       -9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyV"
-    ]
+    "dark": false
   },
   {
     "id": "Key_B",
@@ -513,10 +431,7 @@
       -9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyB"
-    ]
+    "dark": false
   },
   {
     "id": "Key_Blank_R3C6",
@@ -530,8 +445,7 @@
       -9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": []
+    "dark": false
   },
   {
     "id": "Key_Blank_R3C7",
@@ -545,8 +459,7 @@
       -9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": []
+    "dark": false
   },
   {
     "id": "Key_Minus",
@@ -560,10 +473,7 @@
       -9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "Minus"
-    ]
+    "dark": false
   },
   {
     "id": "Key_N",
@@ -577,10 +487,7 @@
       -9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyN"
-    ]
+    "dark": false
   },
   {
     "id": "Key_M",
@@ -594,10 +501,7 @@
       -9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "KeyM"
-    ]
+    "dark": false
   },
   {
     "id": "Key_Comma",
@@ -611,10 +515,7 @@
       -9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "Comma"
-    ]
+    "dark": false
   },
   {
     "id": "Key_Period",
@@ -628,10 +529,7 @@
       -9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "Period"
-    ]
+    "dark": false
   },
   {
     "id": "Key_Slash",
@@ -645,10 +543,7 @@
       -9.525
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "Slash"
-    ]
+    "dark": false
   },
   {
     "id": "Key_Blank_R4C1",
@@ -662,8 +557,7 @@
       -28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": []
+    "dark": false
   },
   {
     "id": "Key_Blank_R4C2",
@@ -677,8 +571,7 @@
       -28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": []
+    "dark": false
   },
   {
     "id": "Key_Blank_R4C3",
@@ -692,8 +585,7 @@
       -28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": []
+    "dark": false
   },
   {
     "id": "Key_Eisu",
@@ -707,10 +599,7 @@
       -28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "Lang2"
-    ]
+    "dark": false
   },
   {
     "id": "Key_Backspace",
@@ -724,10 +613,7 @@
       -28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "Backspace"
-    ]
+    "dark": false
   },
   {
     "id": "Key_Shift",
@@ -741,11 +627,7 @@
       -28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "ShiftLeft",
-      "ShiftRight"
-    ]
+    "dark": false
   },
   {
     "id": "Key_Space",
@@ -759,10 +641,7 @@
       -28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "Space"
-    ]
+    "dark": false
   },
   {
     "id": "Key_Enter",
@@ -776,11 +655,7 @@
       -28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "Enter",
-      "NumpadEnter"
-    ]
+    "dark": false
   },
   {
     "id": "Key_Hiragana",
@@ -794,10 +669,7 @@
       -28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": [
-      "Lang1"
-    ]
+    "dark": false
   },
   {
     "id": "Key_Blank_R4C10",
@@ -811,8 +683,7 @@
       -28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": []
+    "dark": false
   },
   {
     "id": "Key_Blank_R4C11",
@@ -826,8 +697,7 @@
       -28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": []
+    "dark": false
   },
   {
     "id": "Key_Blank_R4C12",
@@ -841,7 +711,6 @@
       -28.575000000000003
     ],
     "pressDistance": 0.0012,
-    "dark": false,
-    "codes": []
+    "dark": false
   }
 ]

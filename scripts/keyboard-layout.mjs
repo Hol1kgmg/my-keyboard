@@ -21,21 +21,6 @@ const legends = {
   Space: "space",
   Enter: "↩︎",
 };
-const codes = {
-  Escape: ["Escape"],
-  Tab: ["Tab"],
-  Semicolon: ["Semicolon"],
-  Minus: ["Minus"],
-  Comma: ["Comma"],
-  Period: ["Period"],
-  Slash: ["Slash"],
-  Backspace: ["Backspace"],
-  Shift: ["ShiftLeft", "ShiftRight"],
-  Space: ["Space"],
-  Enter: ["Enter", "NumpadEnter"],
-  Eisu: ["Lang2"],
-  Hiragana: ["Lang1"],
-};
 let blankCount = 0;
 function key(name, row, column, center, width = 1) {
   const label = name === null ? `無刻印 ${++blankCount}` : (labels[name] ?? name);
@@ -49,7 +34,6 @@ function key(name, row, column, center, width = 1) {
     centerMm: [(center - 6.5) * 19.05, (1.5 - row) * 19.05],
     pressDistance: 0.0012,
     dark: false,
-    codes: name === null ? [] : (codes[name] ?? (/^[A-Z]$/.test(name) ? [`Key${name}`] : [])),
   };
 }
 

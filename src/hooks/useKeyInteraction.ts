@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { keyByCode } from "../data/keyboard";
 
 export const DRAG_THRESHOLD = 6;
 export const HOLD_DELAY = 100;
@@ -10,9 +9,7 @@ export function isDrag(start: { x: number; y: number }, x: number, y: number) {
 
 export function useKeyInteraction() {
   const [sources, setSources] = useState<Record<string, string>>({});
-  const [selectedId, setSelectedId] = useState<string | null>(null);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
-  const [physicalInput, setPhysicalInput] = useState(false);
   const gesture = useRef<{
     id: string;
     pointerId: number;
@@ -24,7 +21,6 @@ export function useKeyInteraction() {
   const pulseTimers = useRef(new Map<string, ReturnType<typeof setTimeout>>());
   const press = useCallback((source: string, id: string) => {
     setSources((previous) => (previous[source] === id ? previous : { ...previous, [source]: id }));
-    setSelectedId(id);
   }, []);
   const release = useCallback((source: string) => {
     setSources((previous) => {
@@ -117,50 +113,7 @@ export function useKeyInteraction() {
     };
   }, [cancelGesture, clear, pulse]);
 
-  useEffect(() => {
-    if (!physicalInput) return;
-    const down = (event: KeyboardEvent) => {
-      const target = event.target instanceof Element ? event.target : null;
-      if (
-        event.repeat ||
-        event.isComposing ||
-        event.metaKey ||
-        event.ctrlKey ||
-        event.altKey ||
-        target?.closest('input, textarea, select, [contenteditable="true"]')
-      )
-        return;
-      if (target?.closest("button") && ["Space", "Enter"].includes(event.code)) return;
-      const key = keyByCode.get(event.code);
-      if (!key) return;
-      if (event.code !== "Tab") event.preventDefault();
-      press(`physical:${event.code}`, key.id);
-    };
-    const up = (event: KeyboardEvent) => {
-      release(`physical:${event.code}`);
-    };
-    window.addEventListener("keydown", down);
-    window.addEventListener("keyup", up);
-    return () => {
-      window.removeEventListener("keydown", down);
-      window.removeEventListener("keyup", up);
-      clear();
-    };
-  }, [physicalInput, press, release, clear]);
-
   const pressedIds = useMemo(() => new Set(Object.values(sources)), [sources]);
-  return {
-    pressedIds,
-    selectedId,
-    hoveredId,
-    setHoveredId,
-    physicalInput,
-    setPhysicalInput,
-    beginPointer,
-    press,
-    release,
-    pulse,
-    clear,
-  };
+  return { pressedIds, hoveredId, setHoveredId, beginPointer, clear };
 }
 export type KeyInteraction = ReturnType<typeof useKeyInteraction>;
