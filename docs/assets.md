@@ -2,9 +2,9 @@
 
 ## キーボード
 
-提供元はリポジトリ所有者です。受領した `keyboard.glb` と `build_keyboard.py` は直下に保持しています。外部向けの再配布ライセンスは所有者に確認中です。リポジトリのMITライセンスを、提供データにも自動で適用したものとは扱いません。
+提供元はリポジトリ所有者です。受領した元モデルは `assets/source/keyboard.glb` に保持しています。外部向けの再配布ライセンスは所有者に確認中です。リポジトリのMITライセンスを、提供データにも自動で適用したものとは扱いません。
 
-`npm run assets` は追加のPython環境なしで、元GLBから `public/models/keyboard.glb` と `src/data/keys.json` を生成します。配信するのは `public/` 以下のモデルです。元の生成スクリプトを実行するときはNumPy・trimesh・Pillowと、スクリプトに指定されたフォントが別途必要です。
+`npm run assets` は `assets/source/keyboard.glb` から `public/models/keyboard.glb` と `src/data/keys.json` を生成します。配信するのは `public/` 以下のモデルです。
 
 変換は `scripts/prepare-keyboard.mjs`、レイアウト定義は `scripts/keyboard-layout.mjs` にあります。現在の51キーの配置に一致するモデルを対象とし、頂点が複数キーに属する・レイアウトに収まらない・三角形がキーをまたぐ場合は失敗します。GLBを差し替えた場合は、この契約も確認してください。
 

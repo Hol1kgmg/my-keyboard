@@ -12,7 +12,7 @@ function readGlb(path) {
     binary: bytes.subarray(28 + jsonSize),
   };
 }
-const original = readGlb("../keyboard.glb");
+const original = readGlb("../assets/source/keyboard.glb");
 const output = readGlb("../public/models/keyboard.glb");
 
 describe("配信用モデルの契約", () => {

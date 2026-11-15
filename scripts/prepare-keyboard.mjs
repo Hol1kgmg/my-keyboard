@@ -3,13 +3,13 @@ import { fileURLToPath } from "node:url";
 import { keyboardLayout } from "./keyboard-layout.mjs";
 
 const root = new URL("../", import.meta.url);
-const source = await readFile(new URL("keyboard.glb", root));
+const source = await readFile(new URL("assets/source/keyboard.glb", root));
 if (
   source.toString("ascii", 0, 4) !== "glTF" ||
   source.readUInt32LE(4) !== 2 ||
   source.readUInt32LE(8) !== source.length
 ) {
-  throw new Error("keyboard.glb must be a complete glTF 2.0 binary.");
+  throw new Error("assets/source/keyboard.glb must be a complete glTF 2.0 binary.");
 }
 const jsonSize = source.readUInt32LE(12);
 const doc = JSON.parse(source.subarray(20, 20 + jsonSize).toString());
