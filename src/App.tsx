@@ -27,7 +27,13 @@ export function App() {
     <div className="app-shell">
       <header className="site-header">
         <span className="wordmark">
-          <svg width="31" height="24" viewBox="0 0 31 24" fill="none" aria-hidden="true">
+          <svg
+            width="31"
+            height="24"
+            viewBox="0 0 31 24"
+            fill="none"
+            aria-hidden="true"
+          >
             <rect x="1" y="3" width="29" height="18" rx="4" />
             <path d="M6 8h3m4 0h3m4 0h4M6 12h3m4 0h3m4 0h4M6 16h3m4 0h3m4 0h11" />
           </svg>
@@ -103,7 +109,9 @@ export function App() {
                   <h3 id="layout-story-heading">配列へのこだわり</h3>
                   <p className="chapter-lead">キーを探す時間をなくして、「入力する」ことに集中したい。</p>
                 </div>
-                <span className="chapter-number" aria-hidden="true">01</span>
+                <span className="chapter-number" aria-hidden="true">
+                  01
+                </span>
               </div>
               <div className="story-grid">
                 <div className="story-point">
@@ -123,9 +131,16 @@ export function App() {
               </div>
               <div className="chapter-footer">
                 <div className="story-tags" aria-label="配列の特徴">
-                  <span>40%</span><span>51 keys</span><span>Ortholinear</span>
+                  <span>40%</span>
+                  <span>51 keys</span>
+                  <span>Ortholinear</span>
                 </div>
-                <a className="slide-link" href="https://talks.hol1kgmg.com/2026/keyboard-tech-stack-review/" target="_blank" rel="noreferrer">
+                <a
+                  className="slide-link"
+                  href="https://talks.hol1kgmg.com/2026/keyboard-tech-stack-review/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   配列を選んだときの話をスライドで読む <span aria-hidden="true">↗</span>
                 </a>
               </div>
@@ -140,7 +155,9 @@ export function App() {
                   <h3 id="hardware-story-heading">ハードウェアへのこだわり</h3>
                   <p className="chapter-lead">目指すのは、Magic Keyboardのような「浅くて軽い」打鍵感。</p>
                 </div>
-                <span className="chapter-number" aria-hidden="true">02</span>
+                <span className="chapter-number" aria-hidden="true">
+                  02
+                </span>
               </div>
               <div className="hardware-summary">
                 <div className="hardware-spec">
@@ -173,9 +190,16 @@ export function App() {
               </div>
               <div className="chapter-footer">
                 <div className="story-tags" aria-label="ハードウェアの特徴">
-                  <span>Kailh Choc V2</span><span>45g spring</span><span>UV resin</span>
+                  <span>Kailh Choc V2</span>
+                  <span>45g spring</span>
+                  <span>UV resin</span>
                 </div>
-                <a className="slide-link" href="https://talks.hol1kgmg.com/2026/keyboard-customize/" target="_blank" rel="noreferrer">
+                <a
+                  className="slide-link"
+                  href="https://talks.hol1kgmg.com/2026/keyboard-customize/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   パーツ選びとカスタマイズをスライドで読む <span aria-hidden="true">↗</span>
                 </a>
               </div>
