@@ -29,7 +29,7 @@ export function App() {
         <span className="wordmark">
           <svg width="31" height="24" viewBox="0 0 31 24" fill="none" aria-hidden="true">
             <rect x="1" y="3" width="29" height="18" rx="4" />
-            <path d="M6 8h3m4 0h3m4 0h4M6 12h3m4 0h3m4 0h4M6 16h3m4 0h3m4 0h4" />
+            <path d="M6 8h3m4 0h3m4 0h4M6 12h3m4 0h3m4 0h4M6 16h3m4 0h3m4 0h11" />
           </svg>
           my keyboard<span className="brand-period">.</span>
         </span>
