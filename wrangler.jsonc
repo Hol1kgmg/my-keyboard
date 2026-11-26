@@ -1,6 +1,6 @@
 {
   "name": "my-keyboard",
-  "compatibility_date": "2026-11-27",
+  "compatibility_date": "2026-11-26",
   "assets": { "directory": "./dist" },
   "previews": {},
 }
