@@ -275,6 +275,249 @@ h1 {
   margin-left: 6px;
   color: var(--muted);
 }
+
+/* The story connects the visible keyboard to the choices behind it. */
+.design-story {
+  border-top: 1px solid var(--line);
+  padding: 76px 0 68px;
+}
+.story-heading {
+  max-width: 700px;
+  margin: 0 auto 58px;
+  text-align: center;
+}
+.section-kicker,
+.chapter-index,
+.point-label {
+  color: var(--brass);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+.story-heading h2 {
+  margin: 15px 0 12px;
+  font-size: clamp(23px, 3vw, 34px);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+.story-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.9;
+}
+.story-chapter {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 38px;
+  padding: 37px 0 43px;
+  border-top: 1px solid var(--line);
+}
+.story-chapter:last-child {
+  padding-bottom: 0;
+}
+.chapter-index {
+  padding-top: 9px;
+  white-space: nowrap;
+}
+.chapter-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.chapter-title-row h3 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.chapter-lead {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.chapter-number {
+  color: #d4d5d8;
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 30px;
+}
+.story-point {
+  min-width: 0;
+  padding: 23px 24px 25px;
+  border: 1px solid #d2d4d8;
+  border-radius: 8px;
+  background: rgb(255 255 255 / 24%);
+}
+.story-point h4 {
+  margin: 10px 0 9px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.story-point p {
+  margin: 0;
+  color: #555d67;
+  font-size: 12px;
+  line-height: 2;
+}
+.story-note {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-top: 17px;
+  padding: 14px 18px;
+  border-left: 2px solid #b8a477;
+  background: rgb(255 255 255 / 22%);
+}
+.note-mark {
+  color: var(--brass);
+  font-size: 17px;
+}
+.story-note p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.9;
+}
+.chapter-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 22px;
+}
+.story-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.story-tags span {
+  padding: 5px 9px;
+  border: 1px solid #c9cbd0;
+  border-radius: 3px;
+  color: #626973;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+.slide-card {
+  flex-basis: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f3f4f6;
+  color: inherit;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+.slide-card:hover,
+.slide-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--brass);
+  box-shadow: 0 10px 24px rgb(40 46 55 / 0.12);
+}
+.slide-card:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 3px;
+}
+.slide-thumb {
+  overflow: hidden;
+  aspect-ratio: 980 / 551;
+  background: #d7d9dd;
+}
+.slide-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.slide-card:hover .slide-thumb img {
+  transform: scale(1.04);
+}
+.slide-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 18px;
+  min-width: 0;
+}
+.slide-meta {
+  color: var(--brass);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+.slide-title {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.slide-desc {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+.slide-host {
+  margin-top: auto;
+  color: #575e68;
+  font-size: 10px;
+}
+.slide-host span {
+  display: inline-block;
+  margin-left: 4px;
+  color: var(--brass);
+  transition: transform 0.25s ease;
+}
+.slide-card:hover .slide-host span {
+  transform: translate(2px, -2px);
+}
+.hardware-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 29px;
+  padding: 22px 24px;
+  border-radius: 8px;
+  background: #dedfe2;
+}
+.hardware-spec {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+.hardware-spec strong {
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+.hardware-spec strong span {
+  margin-left: 3px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.hardware-spec > span:last-child {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.6;
+}
+.hardware-points {
+  margin-top: 17px;
+}
 .parts {
   border-top: 1px solid var(--line);
   padding: 29px 0;
@@ -357,6 +600,25 @@ footer a {
   .object-title h2 {
     font-size: 15px;
   }
+  .story-chapter {
+    grid-template-columns: 115px minmax(0, 1fr);
+    gap: 22px;
+  }
+  .story-point {
+    padding: 19px;
+  }
+}
+@media (max-width: 760px) {
+  .story-chapter {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .chapter-index {
+    padding-top: 0;
+  }
+  .slide-card {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 600px) {
   .app-shell {
@@ -422,6 +684,73 @@ footer a {
   }
   .object-specs dd {
     font-size: 22px;
+  }
+  .design-story {
+    padding: 53px 0 48px;
+  }
+  .story-heading {
+    margin-bottom: 37px;
+    text-align: left;
+  }
+  .story-heading h2 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .story-heading p {
+    font-size: 12px;
+  }
+  .story-chapter {
+    display: block;
+    padding: 27px 0 31px;
+  }
+  .chapter-index {
+    margin-bottom: 14px;
+  }
+  .chapter-title-row h3 {
+    font-size: 20px;
+  }
+  .chapter-number {
+    font-size: 32px;
+  }
+  .chapter-lead {
+    font-size: 12px;
+  }
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 11px;
+    margin-top: 22px;
+  }
+  .story-point {
+    padding: 18px 19px 20px;
+  }
+  .story-point h4 {
+    font-size: 16px;
+  }
+  .story-point p {
+    font-size: 11px;
+    line-height: 1.9;
+  }
+  .story-note {
+    padding: 12px 14px;
+  }
+  .chapter-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .slide-card {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .hardware-summary {
+    gap: 9px;
+    padding: 17px 13px;
+  }
+  .hardware-spec strong {
+    font-size: 23px;
+  }
+  .hardware-spec > span:last-child {
+    font-size: 9px;
   }
   footer {
     flex-wrap: wrap;
