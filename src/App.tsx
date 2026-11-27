@@ -21,6 +21,54 @@ const PARTS = [
   },
 ];
 
+type Slide = {
+  url: string;
+  image: string;
+  width: number;
+  height: number;
+  event: string;
+  title: string;
+  description: string;
+};
+
+const LAYOUT_SLIDE: Slide = {
+  url: "https://talks.hol1kgmg.com/2026/keyboard-tech-stack-review/",
+  image: "/og-image.png",
+  width: 1200,
+  height: 630,
+  event: "新卒N年目の勉強会&交流会！#6",
+  title: "このPJ（キーボード）の技術選定についてレビューしてください",
+  description: "自作キーボードプロジェクトの技術選定を振り返り、レビューしてもらう話",
+};
+
+const HARDWARE_SLIDE: Slide = {
+  url: "https://talks.hol1kgmg.com/2026/keyboard-customize/",
+  image: "/slides/keyboard-customize.webp",
+  width: 1166,
+  height: 788,
+  event: "TechBull mini LT&交流会！#5",
+  title: "5分でわかるキーボードのカスタマイズ",
+  description: "キースイッチとキーキャップを選んだ理由と、そこに加えたカスタマイズの話",
+};
+
+function SlideCard({ slide }: { slide: Slide }) {
+  return (
+    <a className="slide-card" href={slide.url} target="_blank" rel="noreferrer">
+      <span className="slide-thumb">
+        <img src={slide.image} alt="" width={slide.width} height={slide.height} loading="lazy" />
+      </span>
+      <span className="slide-body">
+        <span className="slide-meta">SLIDES · {slide.event}</span>
+        <strong className="slide-title">{slide.title}</strong>
+        <span className="slide-desc">{slide.description}</span>
+        <span className="slide-host">
+          talks.hol1kgmg.com <span aria-hidden="true">↗</span>
+        </span>
+      </span>
+    </a>
+  );
+}
+
 export function App() {
   const interaction = useKeyInteraction();
   return (
@@ -139,14 +187,7 @@ export function App() {
                   <span>51 keys</span>
                   <span>Ortholinear</span>
                 </div>
-                <a
-                  className="slide-link"
-                  href="https://talks.hol1kgmg.com/2026/keyboard-tech-stack-review/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  配列を選んだときの話をスライドで読む <span aria-hidden="true">↗</span>
-                </a>
+                <SlideCard slide={LAYOUT_SLIDE} />
               </div>
             </div>
           </article>
@@ -212,14 +253,7 @@ export function App() {
                   <span>45g spring</span>
                   <span>UV resin</span>
                 </div>
-                <a
-                  className="slide-link"
-                  href="https://talks.hol1kgmg.com/2026/keyboard-customize/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  パーツ選びとカスタマイズをスライドで読む <span aria-hidden="true">↗</span>
-                </a>
+                <SlideCard slide={HARDWARE_SLIDE} />
               </div>
             </div>
           </article>
